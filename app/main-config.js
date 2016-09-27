@@ -84,7 +84,8 @@ if( app.isProduction ) {
 	if ( app.isInBuilder )
 		loadCSS("app/builder-min.css");
 	else
-		loadCSS("app/viewer-min.css");
+		//loadCSS("app/viewer-min.css");
+		loadCSS("app/viewer.css");
 }
 
 loadCSS(app.pathJSAPI + "esri/css/esri.css", true);
