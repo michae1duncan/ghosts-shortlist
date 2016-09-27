@@ -10730,7 +10730,7 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
                         var r = $(t);
                         n += r.is(":visible") ? r.outerHeight() : 0
                     }), $("#contentPanel").height(t - n), $("#paneLeft").height($("#contentPanel").height() - $("#tabs").height());
-                    var r = app.data.getWebAppData().getHeader().compactSize ? "60px" : "110px";
+                    var r = app.data.getWebAppData().getHeader().compactSize ? "60px" : "200px";
                     $("#header").height(r), $(".tilelist").height($("#paneLeft").height() - (app.isInBuilder ? 70 : 48)), $(".tilelist").css("top", app.isInBuilder ? 60 : 38), $("#paneLeft .noFeature").width($("#paneLeft").width()), $("#paneLeft").width() == app.cfg.LEFT_PANE_WIDTH_TWO_COLUMN ? $("#paneLeft .noFeatureText").css("margin-left", "50px") : $("#paneLeft .noFeatureText").css("margin-left", "150px"), $("#map").height(e.height), $("#map").css("top", 0), app.ui.navBar.resize(), e.width <= app.cfg.TWO_COLUMN_THRESHOLD || e.width <= 1024 && e.height <= 768 ? (setTimeout(function() {
                         $("#mainStagePanel").width(e.width - (app.cfg.LEFT_PANE_WIDTH_TWO_COLUMN + 16)), $("#mainStagePanel").css("left", app.cfg.LEFT_PANE_WIDTH_TWO_COLUMN + 16), app.map && app.map.resize(), v.selected && !app.map.extent.contains(v.selected.geometry) && app.mapTips.clean(!0)
                     }, 0), app.ui.tilePanel.resize(app.cfg.LEFT_PANE_WIDTH_TWO_COLUMN), app.isInBuilder ? app.detailPanelBuilder.resize() : app.ui.detailPanel.resize()) : e.width <= app.cfg.THREE_COLUMN_THRESHOLD && e.width >= app.cfg.TWO_COLUMN_THRESHOLD ? (setTimeout(function() {

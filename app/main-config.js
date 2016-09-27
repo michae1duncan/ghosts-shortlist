@@ -80,19 +80,19 @@ window.dojoConfig.locale = 'en';
 app.isInBuilder = getUrlVar('edit') || getUrlVar('fromScratch') || getUrlVar('fromscratch');
 app.indexCfg = configOptions;
 
-if( app.isProduction ) {
-	if ( app.isInBuilder )
-		loadCSS("app/builder-min.css");
-	else
-		//loadCSS("app/viewer-min.css");
-		//loadCSS("app/CSSchanges.css");
-		loadCSS("app/viewer.css");
-}
-
+// if( app.isProduction ) {
+// 	if ( app.isInBuilder )
+// 		loadCSS("app/builder-min.css");
+// 	else
+// 		//loadCSS("app/viewer-min.css");
+// 		//loadCSS("app/CSSchanges.css");
+// 		loadCSS("app/viewer.css");
+// }
+loadCSS("app/viewer.css");
 loadCSS(app.pathJSAPI + "esri/css/esri.css", true);
 loadCSS(app.pathJSAPI + "dijit/themes/claro/claro.css", true);
 //loadCSS(app.pathJSAPI + "esri/themes/calcite/dijit/calcite.css", true);
-
+loadCSS("app/custom.css");
 
 loadJS(app.pathJSAPI + 'init.js', true);
 loadJS('app/config.js');
@@ -108,7 +108,8 @@ if( app.isProduction ) {
 	if ( app.isInBuilder )
 		loadJS('app/builder-min.js');
 	else
-		loadJS('app/viewer-min.js');
+		//loadJS('app/viewer-min.js');
+		loadJS('app/viewer.js');
 }
 
 loadJS('app/main-app.js');
