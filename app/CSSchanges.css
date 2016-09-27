@@ -1,0 +1,193 @@
+/*Stylesheet viewer-min.css*/
+
+
+/*line 3165*/
+
+#header {
+    background: #e4e3df;
+    color: #fff;
+    margin: 0;
+    overflow: hidden
+}
+
+
+/*line 3171*/
+
+#header .title {
+    font-family: 'open_sanssemibold', sans-serif
+}
+
+
+/*line 3174*/
+
+#headerDesktop {
+    position: relative;
+    /*height: 115px*/
+    height: 150px
+}
+
+
+/*line 3190*/
+
+#headerDesktop .title {
+    height: 45px;
+    padding-top: 3px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: inherit
+}
+
+
+/*line 3215*/
+
+#headerDesktop .subtitle {
+    font-size: 13px;
+    overflow: hidden;
+    overflow-y: auto;
+    font-weight: 400;
+    line-height: 18px;
+    word-wrap: break-word;
+    height: 54px;
+    color: #C5D5D5
+}
+
+
+/*line 3996*/
+
+#paneLeft {
+    width: 520px;
+    background-color: #C7C7C7;
+    padding: 8px;
+    border-top-width: 10px;
+    border-top-style: solid;
+    display: block
+}
+
+
+/* ======== thumbnails ======== */
+
+
+/*
+<ul id="myList" class="tilelist" style="height: 368px; top: 38px; width: 662px; outline: medium none;">
+  <li tabindex="0" id="item0" style="display:block">
+    <div class="footer">
+      <div class="num" style="background-color:#323b56">1</div>
+      <div class="blurb">8 South West Temple</div>
+    </div>
+    <div class="tileImage" style="background-image: url(&quot;https://gis.test.slco.org/gisimages/Archives/2016/Thumbnails/valleyHouse.jpg&quot;); outline: medium none;"></div>
+  </li>
+</ul>
+*/
+
+
+/*line 4017*/
+
+ul.tilelist {
+    width: 495px;
+    padding-left: 17px;
+    padding-bottom: 10px;
+    display: inline-block;
+    overflow: auto;
+    position: absolute;
+    top: 18px;
+    left: 0
+}
+
+
+/*line 4027*/
+
+ul.tilelist li {
+    list-style-type: none;
+    margin: 3px;
+    width: 150px;
+    height: 150px;
+    float: left;
+    font-size: 10px;
+    background-color: #F9F9F9;
+    cursor: pointer;
+    position: relative
+}
+
+
+/*line 4076*/
+
+ul.tilelist .num {
+    width: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    float: left;
+    border: solid;
+    border-width: thin;
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+    font-family: 'calibri';
+    font-weight: 700
+}
+
+
+/*line 4092*/
+
+ul.tilelist .blurb {
+    width: 116px;
+    height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    word-wrap: break-word;
+    float: left;
+    margin-left: 4px;
+    text-align: left;
+    font-family: 'open_sansregular', sans-serif
+}
+
+
+/* ======== end thumbnails ======== */
+
+
+/* ======== start swiper slider ======== */
+
+
+/*line */
+
+.detailHeader {
+    margin-bottom: 12px;
+    border-top: 10px;
+    border-top-style: solid
+}
+
+
+/*line 4234*/
+
+.detailFeatureNum {
+    width: 36px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: solid;
+    border-width: thin;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'calibri';
+    font-weight: 700
+}
+
+
+/*line 4246*/
+
+.detailFeatureTitle {
+    color: #333;
+    font-family: 'open_sanssemibold', sans-serif;
+    font-size: 22px;
+    text-align: left;
+    padding-left: 60px;
+    padding-top: 15px;
+    margin-top: -45px;
+    margin-right: 125px;
+    line-height: 26px
+}
