@@ -4495,6 +4495,10 @@ input[type="checkbox"] {
 	overflow: hidden
 }
 
+/*#header .mainViewAboveMap {
+  height: 200px;
+}*/
+
 #header .title {
     font-family: 'open_sanssemibold', sans-serif
 }
