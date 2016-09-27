@@ -1,193 +1,154 @@
+
 /*Stylesheet viewer-min.css*/
-
-
+/*line 931*/
+body {
+	background-image: url(paperBk.jpg);
+	line-height: 1.42857143;
+}
 /*line 3165*/
-
 #header {
-    background: #e4e3df;
-    color: #fff;
-    margin: 0;
-    overflow: hidden
+	background: #e4e3df;
+	color: #fff;
+	margin: 0;
+	overflow: hidden
 }
-
-
-/*line 3171*/
-
-#header .title {
-    font-family: 'open_sanssemibold', sans-serif
-}
-
-
 /*line 3174*/
-
-#headerDesktop {
-    position: relative;
-    /*height: 115px*/
-    height: 150px
+.headerDesktop {
+	position: relative;
+	width: 100%;
+	height: 200px;
+	background-image: url(headerBk.jpg);
+	background-position: bottom;
+	background-size: cover;
+	padding-top: 20px;
 }
-
-
 /*line 3190*/
-
-#headerDesktop .title {
-    height: 45px;
-    padding-top: 3px;
-    font-size: 24px;
-    font-weight: 400;
-    text-align: left;
-    overflow: hidden;
-    white-space: nowrap;
-    line-height: inherit
+.headerDesktop .title {
+	width: 500px;
+	height: 1.1em;
+	margin: 0;
+	padding: 4px 0 0 20px;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size: 50px;
+	font-weight: normal;
+	color: #fff;
+	text-shadow: 2px 2px 0px rgba(18,17,14,1.00);
+	background: -webkit-linear-gradient(left, rgba(181,13,13,.75), rgba(181,13,13,.5)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, rgba(181,13,13,.75), rgba(181,13,13,.5)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, rgba(181,13,13,.75), rgba(181,13,13,.5)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, rgba(181,13,13,.75), rgba(181,13,13,.5)); /* Standard syntax (must be last) */
 }
-
-
 /*line 3215*/
-
-#headerDesktop .subtitle {
-    font-size: 13px;
-    overflow: hidden;
-    overflow-y: auto;
-    font-weight: 400;
-    line-height: 18px;
-    word-wrap: break-word;
-    height: 54px;
-    color: #C5D5D5
+.headerDesktop .subtitle {
+	width: 500px;
+	height: 1.25em;
+	margin: 0;
+	padding: 0px 0 10px 20px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size: 30px;
+	font-weight: normal;
+	letter-spacing: .1em;
+	color: #fff;
+	text-shadow: 2px 2px 0px rgba(18,17,14,1.00);
+	background: -webkit-linear-gradient(left, rgba(181,13,13,.75), rgba(181,13,13,.5)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, rgba(181,13,13,.75), rgba(181,13,13,.5)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, rgba(181,13,13,.75), rgba(181,13,13,.5)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, rgba(181,13,13,.75), rgba(181,13,13,.5)); /* Standard syntax (must be last) */
 }
 
-
-/*line 3996*/
-
-#paneLeft {
-    width: 520px;
-    background-color: #C7C7C7;
-    padding: 8px;
-    border-top-width: 10px;
-    border-top-style: solid;
-    display: block
-}
-
-
-/* ======== thumbnails ======== */
-
-
-/*
-<ul id="myList" class="tilelist" style="height: 368px; top: 38px; width: 662px; outline: medium none;">
-  <li tabindex="0" id="item0" style="display:block">
-    <div class="footer">
-      <div class="num" style="background-color:#323b56">1</div>
-      <div class="blurb">8 South West Temple</div>
-    </div>
-    <div class="tileImage" style="background-image: url(&quot;https://gis.test.slco.org/gisimages/Archives/2016/Thumbnails/valleyHouse.jpg&quot;); outline: medium none;"></div>
-  </li>
-</ul>
-*/
-
+/* start paneLeft */
 
 /*line 4017*/
-
 ul.tilelist {
-    width: 495px;
-    padding-left: 17px;
-    padding-bottom: 10px;
-    display: inline-block;
-    overflow: auto;
-    position: absolute;
-    top: 18px;
-    left: 0
+	width: 495px;
+	padding-left: 17px;
+	padding-bottom: 10px;
+	display: inline-block;
+	overflow: auto;
+	position: absolute;
+	top: 18px;
+	left: 0
 }
-
-
 /*line 4027*/
-
 ul.tilelist li {
-    list-style-type: none;
-    margin: 3px;
-    width: 150px;
-    height: 150px;
-    float: left;
-    font-size: 10px;
-    background-color: #F9F9F9;
-    cursor: pointer;
-    position: relative
+	list-style-type: none;
+	margin: 3px;
+	width: 150px;
+	height: 150px;
+	float: left;
+	font-size: 10px;
+	background: rgba(249, 249, 249, 0.4);
+	cursor: pointer;
+	position: relative
 }
-
-
 /*line 4076*/
-
 ul.tilelist .num {
-    width: 20px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    float: left;
-    border: solid;
-    border-width: thin;
-    color: #fff;
-    font-size: 11px;
-    text-align: center;
-    font-family: 'calibri';
-    font-weight: 700
+	width: 20px;
+	padding:3px 0;
+	float: left;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-weight:normal;
+	border: solid;
+	border-width: thin;
+	-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
 }
-
-
 /*line 4092*/
-
 ul.tilelist .blurb {
-    width: 116px;
-    height: 30px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    word-wrap: break-word;
-    float: left;
-    margin-left: 4px;
-    text-align: left;
-    font-family: 'open_sansregular', sans-serif
+	width: 116px;
+	height: 30px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	word-wrap: break-word;
+	float: left;
+	margin-left: 4px;
+	text-align: left;
+	font-family: 'open_sansregular', sans-serif
 }
-
-
-/* ======== end thumbnails ======== */
-
+/* end paneLeft */
 
 /* ======== start swiper slider ======== */
-
-
-/*line */
-
+/*line 4229*/
 .detailHeader {
-    margin-bottom: 12px;
-    border-top: 10px;
-    border-top-style: solid
+	margin-bottom: 12px;
+	border-top: 0px;
+	border-top-style: solid;
 }
-
-
 /*line 4234*/
-
 .detailFeatureNum {
-    width: 36px;
-    margin-left: 10px;
-    margin-top: 10px;
-    border: solid;
-    border-width: thin;
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
-    font-family: 'calibri';
-    font-weight: 700
+	width: 36px;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding:4px 0;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-weight:normal;
+	border: solid;
+	border-width: thin;
+	-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
 }
-
-
 /*line 4246*/
-
 .detailFeatureTitle {
-    color: #333;
-    font-family: 'open_sanssemibold', sans-serif;
-    font-size: 22px;
-    text-align: left;
-    padding-left: 60px;
-    padding-top: 15px;
-    margin-top: -45px;
-    margin-right: 125px;
-    line-height: 26px
+	color: #333;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size: 30px;
+	font-weight:normal;
+	text-align: left;
+	padding-left: 60px;
+	padding-top: 15px;
+	margin-top: -45px;
+	margin-right: 125px;
+	line-height: 26px
 }
+/* ======== end swiper slider ======== */

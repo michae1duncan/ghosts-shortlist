@@ -85,6 +85,7 @@ if( app.isProduction ) {
 		loadCSS("app/builder-min.css");
 	else
 		//loadCSS("app/viewer-min.css");
+		//loadCSS("app/CSSchanges.css");
 		loadCSS("app/viewer.css");
 }
 

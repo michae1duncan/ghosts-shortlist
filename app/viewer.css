@@ -1269,6 +1269,7 @@ html {
 }
 
 body {
+    background-image: url(paperBk.jpg);
     line-height: 1.42857143
 }
 
@@ -4488,10 +4489,10 @@ input[type="checkbox"] {
 }
 
 #header {
-  background: #e4e3df;
-  color: #fff;
-  margin: 0;
-  overflow: hidden
+	background: #e4e3df;
+	color: #fff;
+	margin: 0;
+	overflow: hidden
 }
 
 #header .title {
@@ -4499,8 +4500,13 @@ input[type="checkbox"] {
 }
 
 #headerDesktop {
-    position: relative;
-    height: 115px
+	position: relative;
+	width: 100%;
+	height: 200px;
+	background-image: url(headerBk.jpg);
+	background-position: bottom;
+	background-size: cover;
+	padding-top: 20px;
 }
 
 #headerDesktop.compact {
@@ -4520,14 +4526,19 @@ input[type="checkbox"] {
 }
 
 #headerDesktop .title {
-    height: 45px;
-    padding-top: 3px;
-    font-size: 24px;
-    font-weight: 400;
-    text-align: left;
-    overflow: hidden;
-    white-space: nowrap;
-    line-height: inherit
+    width: 500px;
+    height: 1.1em;
+    margin: 0;
+    padding: 4px 0 0 20px;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-size: 50px;
+    font-weight: normal;
+    color: #fff;
+    text-shadow: 2px 2px 0px rgba(18,17,14,1.00);
+    background: -webkit-linear-gradient(left, rgba(181,13,13,.75), rgba(181,13,13,.5)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(181,13,13,.75), rgba(181,13,13,.5)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(181,13,13,.75), rgba(181,13,13,.5)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(181,13,13,.75), rgba(181,13,13,.5)); /* Standard syntax (must be last) */
 }
 
 #headerDesktop:not(.isBuilder) .title {
@@ -4549,14 +4560,20 @@ input[type="checkbox"] {
 }
 
 #headerDesktop .subtitle {
-    font-size: 13px;
-    overflow: hidden;
-    overflow-y: auto;
-    font-weight: 400;
-    line-height: 18px;
-    word-wrap: break-word;
-    height: 54px;
-    color: #C5D5D5
+    width: 500px;
+    height: 1.25em;
+    margin: 0;
+    padding: 0px 0 10px 20px;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: .1em;
+    color: #fff;
+    text-shadow: 2px 2px 0px rgba(18,17,14,1.00);
+    background: -webkit-linear-gradient(left, rgba(181,13,13,.75), rgba(181,13,13,.5)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(181,13,13,.75), rgba(181,13,13,.5)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(181,13,13,.75), rgba(181,13,13,.5)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(181,13,13,.75), rgba(181,13,13,.5)); /* Standard syntax (must be last) */
 }
 
 #headerDesktop.compact .subtitle {
@@ -5540,7 +5557,7 @@ ul.tilelist li {
     height: 150px;
     float: left;
     font-size: 10px;
-    background-color: #F9F9F9;
+    background: rgba(249, 249, 249, 0.4);
     cursor: pointer;
     position: relative
 }
@@ -5592,16 +5609,18 @@ ul.tilelist .footer {
 
 ul.tilelist .num {
     width: 20px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding:3px 0;
     float: left;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-weight:normal;
     border: solid;
     border-width: thin;
-    color: #fff;
-    font-size: 11px;
-    text-align: center;
-    font-family: 'calibri';
-    font-weight: 700
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
 }
 
 ul.tilelist .longNum {
@@ -5771,7 +5790,7 @@ ul.tilelist .longNumBlurb {
 
 .detailHeader {
     margin-bottom: 12px;
-    border-top: 10px;
+    border-top: 0px;
     border-top-style: solid
 }
 
@@ -5779,19 +5798,24 @@ ul.tilelist .longNumBlurb {
     width: 36px;
     margin-left: 10px;
     margin-top: 10px;
-    border: solid;
-    border-width: thin;
+    padding:4px 0;
     color: #fff;
     font-size: 20px;
     text-align: center;
-    font-family: 'calibri';
-    font-weight: 700
+    font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-weight:normal;
+    border: solid;
+    border-width: thin;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
 }
 
 .detailFeatureTitle {
     color: #333;
-    font-family: 'open_sanssemibold', sans-serif;
-    font-size: 22px;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-size: 30px;
+    font-weight:normal;
     text-align: left;
     padding-left: 60px;
     padding-top: 15px;
