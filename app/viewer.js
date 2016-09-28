@@ -10338,7 +10338,8 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
                     try {
                         v.selected.getShape().moveToFront()
 
-                        //CUSTOM CODE to center on each point selection
+                        //CUSTOM CODE
+                        // this centers and zooms when each point is selecter or the left pane is swiped
                         app.map.centerAndZoom(v.selected.geometry, 19)
 
                     } catch (e) {
