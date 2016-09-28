@@ -4489,10 +4489,15 @@ input[type="checkbox"] {
 }
 
 #header {
-	background: #e4e3df;
+	/*background: #e4e3df;*/
+  background-image: url(images/headerBk.jpg);
+  background-position: bottom;
+	background-size: cover;
 	color: #fff;
 	margin: 0;
 	overflow: hidden
+  height: 200px;
+  border-bottom: solid 2px #4B4A48;
 }
 
 /*#header .mainViewAboveMap {
@@ -4507,10 +4512,11 @@ input[type="checkbox"] {
 	position: relative;
 	width: 100%;
 	height: 200px;
-	background-image: url(images/headerBk.jpg);
+	/*background-image: url(images/headerBk.jpg);*/
 	background-position: bottom;
 	background-size: cover;
 	padding-top: 20px;
+  left: -20px;
 }
 
 #headerDesktop.compact {
@@ -4530,10 +4536,10 @@ input[type="checkbox"] {
 }
 
 #headerDesktop .title {
-    width: 500px;
-    height: 1.1em;
+    /*width: 500px;*/
+    /*height: 1.1em;*/
     margin: 0;
-    padding: 4px 0 0 20px;
+    padding: 10px 0 0 20px;
     font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
     font-size: 50px;
     font-weight: normal;
@@ -4564,10 +4570,10 @@ input[type="checkbox"] {
 }
 
 #headerDesktop .subtitle {
-    width: 500px;
-    height: 1.25em;
+    /*width: 14em;*/
+    /*height: 1.25em;*/
     margin: 0;
-    padding: 0px 0 10px 20px;
+    padding: 0px 0 20px 20px;
     font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
     font-size: 30px;
     font-weight: normal;
@@ -4586,7 +4592,8 @@ input[type="checkbox"] {
 
 #headerDesktop .title,
 #headerDesktop .subtitle {
-    padding-left: 4px
+    padding-left: 30px;
+    width: 570px;
 }
 
 #headerDesktop .rightArea {
@@ -4725,8 +4732,8 @@ input[type="checkbox"] {
 
 #headerDesktop .subtitle .text_edit_input {
     font-size: 13px;
-    line-height: 16px;
-    width: 97%;
+    /*line-height: 16px;*/
+    /*width: 97%;*/
     padding: 0
 }
 
@@ -5521,10 +5528,10 @@ iframe:not([src]) {
 
 #paneLeft {
     width: 520px;
-    background-color: #C7C7C7;
     padding: 8px;
     border-top-width: 10px;
-    border-top-style: solid;
+    /*remove this comment to show colored navbar and tabs*/
+    /*border-top-style: solid;*/
     display: block
 }
 
@@ -5557,13 +5564,15 @@ ul.tilelist {
 ul.tilelist li {
     list-style-type: none;
     margin: 3px;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     float: left;
-    font-size: 10px;
-    background: rgba(249, 249, 249, 0.4);
+    font-size: 12px;
+    font-weight: bold;
+    background: rgba(249, 249, 249, 0.9);
     cursor: pointer;
-    position: relative
+    position: relative;
+    border: solid 1px rgba(181,13,13, 0.9);
 }
 
 ul.tilelist li:hover {
@@ -5581,15 +5590,15 @@ ul.tilelist>a {
 }
 
 ul.tilelist img {
-    max-width: 150px;
-    max-height: 113px
+    max-width: 200px;
+    max-height: 165px
 }
 
 .tileImage {
     background-size: contain;
     background-repeat: no-repeat;
-    width: 150px;
-    height: 113px
+    width: 100%;
+    height: 165px;
 }
 
 .tileImage i {
@@ -5605,18 +5614,18 @@ ul.tilelist p {
 }
 
 ul.tilelist .footer {
-    padding-left: 5px;
+    padding-left: 8px;
     position: absolute;
-    top: 118px;
+    top: 158px;
     left: 0
 }
 
 ul.tilelist .num {
-    width: 20px;
-    padding:3px 0;
+    width: 22px;
+    padding:2px 0;
     float: left;
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
     font-weight:normal;
@@ -5632,8 +5641,8 @@ ul.tilelist .longNum {
 }
 
 ul.tilelist .blurb {
-    width: 116px;
-    height: 30px;
+    width: 155px;
+    height: 38px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -5707,7 +5716,8 @@ ul.tilelist .longNumBlurb {
 .detailView {
     opacity: 1;
     width: inherit;
-    background-color: #fff;
+    /*background-color: #fff;*/
+    background-image: url(images/paperBk.jpg);
     overflow-y: hidden;
     overflow-x: hidden
 }
@@ -5785,7 +5795,7 @@ ul.tilelist .longNumBlurb {
     font-size: 35px;
     background-color: transparent;
     color: #8c8c8c;
-    opacity: .8
+    opacity: .8;
 }
 
 .detailClose:hover {
@@ -5793,9 +5803,10 @@ ul.tilelist .longNumBlurb {
 }
 
 .detailHeader {
-    margin-bottom: 12px;
+    margin-bottom: 24px;
+    padding-top: 12px;
     border-top: 0px;
-    border-top-style: solid
+    border-top-style: solid;
 }
 
 .detailFeatureNum {
@@ -5816,13 +5827,13 @@ ul.tilelist .longNumBlurb {
 }
 
 .detailFeatureTitle {
-    color: #333;
+    color: #8d1f1f;
     font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
     font-size: 30px;
-    font-weight:normal;
+    font-weight: bold;
     text-align: left;
     padding-left: 60px;
-    padding-top: 15px;
+    padding-top: 10px;
     margin-top: -45px;
     margin-right: 125px;
     line-height: 26px
