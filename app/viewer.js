@@ -10586,10 +10586,18 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
             }, this.postSelection = function() {
                 if (v.selected == null) app.map.infoWindow.hide();
                 else {
-                    if (!v.selected.attributes.locationSet && !app.isInBuilder) return;
-                    !app.map.extent.contains(v.selected.geometry) && v.selected.attributes.locationSet && app.map.centerAt(v.selected.geometry), setTimeout(function() {
-                        v.buildMapTips()
-                    }, 250), app.isInBuilder ? app.detailPanelBuilder.showSlide(v.selected.attributes.shortlist_id) : app.ui.detailPanel.showDetails(v.selected), app.ui.mobileIntro.hide(), app.ui.mobileFeatureList.setColor()
+
+                // ORIGINAL CODE
+                //     if (!v.selected.attributes.locationSet && !app.isInBuilder) return;
+                //     !app.map.extent.contains(v.selected.geometry) && v.selected.attributes.locationSet && app.map.centerAt(v.selected.geometry), setTimeout(function() {
+                //         v.buildMapTips()
+                //     }, 250), app.isInBuilder ? app.detailPanelBuilder.showSlide(v.selected.attributes.shortlist_id) : app.ui.detailPanel.showDetails(v.selected), app.ui.mobileIntro.hide(), app.ui.mobileFeatureList.setColor()
+
+                //CUSTOM  CENTER AT CODE
+                  app.map.centerAndZoom(v.selected.geometry, 20), setTimeout(function() {
+                      v.buildMapTips()
+                  }, 250), app.isInBuilder ? app.detailPanelBuilder.showSlide(v.selected.attributes.shortlist_id) : app.ui.detailPanel.showDetails(v.selected), app.ui.mobileIntro.hide(), app.ui.mobileFeatureList.setColor()
+
                 }
             }, this.buildMapTips = function(e) {
                 setTimeout(function() {
