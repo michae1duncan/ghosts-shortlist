@@ -30,8 +30,8 @@ else {
 				){
 		 			if (app.isInBuilder) {
 						require([
-								"storymaps/common/builder/Builder",
-								"storymaps/tpl/builder/BuilderView" ,
+								// "storymaps/common/builder/Builder",
+								// "storymaps/tpl/builder/BuilderView" ,
 								"dojo/i18n!./resources/tpl/builder/nls/template.js?v=" + app.version,
 								"dojo/i18n!commonResources/nls/core.js?v=" + app.version,
 								"dojo/i18n!commonResources/nls/media.js?v=" + app.version,
@@ -39,8 +39,8 @@ else {
 								"dojo/i18n!commonResources/nls/mapcontrols.js?v=" + app.version,
 								"dojo/_base/lang"
 							], function(
-								Builder,
-								BuilderView,
+								// Builder,
+								// BuilderView,
 								i18nBuilder,
 								i18nCommonBuilder,
 								i18nCommonMedia,
