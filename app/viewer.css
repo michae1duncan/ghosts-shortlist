@@ -4496,7 +4496,7 @@ input[type="checkbox"] {
 	margin: 0;
 	overflow: hidden
   height: 200px;
-  border-bottom: solid 1px #502306;
+  /*border-bottom: solid 1px #502306;*/
 }
 
 #header .title {
