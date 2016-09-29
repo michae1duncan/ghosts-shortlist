@@ -7681,7 +7681,11 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
                     var i = $(n).find(".detailHeader").outerHeight();
                     $(".detailTextContainer").height($("#paneLeft").outerHeight() - i - e + "px"), $(".detailPictureDiv img").css("max-width", $("#paneLeft").outerWidth());
                     var s = $("#paneLeft").outerHeight() - i - 60 < $("#paneLeft").outerHeight() * .6 ? $("#paneLeft").outerHeight() - i - 60 : $("#paneLeft").outerHeight() * .6;
-                    $(".detailPictureDiv img").css("max-height", parseInt(s) + "px"), $(".detailContainer").width($("#paneLeft").outerWidth()), $(".detailContainer").height($("#paneLeft").outerHeight())
+                    //ORIGINAL CODE
+                    //$(".detailPictureDiv img").css("max-height", parseInt(s) + "px"), $(".detailContainer").width($("#paneLeft").outerWidth()), $(".detailContainer").height($("#paneLeft").outerHeight())
+                    //CUSTOM CODE
+                    // this is where we set the max-height for the images in left pane
+                    $(".detailPictureDiv img").css("max-height", "initial"), $(".detailContainer").width($("#paneLeft").outerWidth()), $(".detailContainer").height($("#paneLeft").outerHeight())
                 }, 0)
             }, this.showEntryIndex = function() {}, this.destroy = function() {}
         }

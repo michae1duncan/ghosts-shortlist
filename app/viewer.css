@@ -4496,7 +4496,7 @@ input[type="checkbox"] {
 	margin: 0;
 	overflow: hidden
   height: 200px;
-  border-bottom: solid 2px #4B4A48;
+  border-bottom: solid 1px #502306;
 }
 
 #header .title {
@@ -4530,15 +4530,15 @@ input[type="checkbox"] {
 #headerDesktop .title {
     margin: 0;
     padding: 10px 0 0 20px;
-    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-family: "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
     font-size: 50px;
     font-weight: normal;
     color: #fff;
     text-shadow: 2px 2px 0px rgba(18,17,14,1.00);
-    background: -webkit-linear-gradient(left, rgba(141,31,31,.75), rgba(141,31,31,.4)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, rgba(141,31,31,.75), rgba(141,31,31,.4)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, rgba(141,31,31,.75), rgba(141,31,31,.4)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, rgba(141,31,31,.75), rgba(141,31,31,.4)); /* Standard syntax (must be last) */
+    background: -webkit-linear-gradient(left, rgba(116, 27, 27, 0.90), rgba(116, 27, 27, 0.75)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(116, 27, 27, 0.90), rgba(116, 27, 27, 0.75)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(116, 27, 27, 0.90), rgba(116, 27, 27, 0.75)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(116, 27, 27, 0.90), rgba(116, 27, 27, 0.75)); /* Standard syntax (must be last) */
 }
 
 #headerDesktop:not(.isBuilder) .title {
@@ -4568,10 +4568,10 @@ input[type="checkbox"] {
     letter-spacing: .1em;
     color: #fff;
     text-shadow: 2px 2px 0px rgba(18,17,14,1.00);
-    background: -webkit-linear-gradient(left, rgba(141,31,31,.75), rgba(141,31,31,.4)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, rgba(141,31,31,.75), rgba(141,31,31,.4)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, rgba(141,31,31,.75), rgba(141,31,31,.4)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, rgba(141,31,31,.75), rgba(141,31,31,.4)); /* Standard syntax (must be last) */
+    background: -webkit-linear-gradient(left, rgba(116, 27, 27, 0.90), rgba(116, 27, 27, 0.75)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(116, 27, 27, 0.90), rgba(116, 27, 27, 0.75)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(116, 27, 27, 0.90), rgba(116, 27, 27, 0.75)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(116, 27, 27, 0.90), rgba(116, 27, 27, 0.75)); /* Standard syntax (must be last) */
 }
 
 #headerDesktop.compact .subtitle {
@@ -5557,10 +5557,10 @@ ul.tilelist li {
     float: left;
     font-size: 12px;
     font-weight: bold;
-    background: rgba(249, 249, 249, 0.9);
+    background: rgba(249, 249, 249, 0.85);
     cursor: pointer;
     position: relative;
-    border: solid 1px rgba(181,13,13, 0.9);
+    border: solid 1px rgba(80,35,6, 0.95);
 }
 
 ul.tilelist li:hover {
@@ -5848,7 +5848,8 @@ ul.tilelist .longNumBlurb {
 
 .detailTextContainer {
     overflow-y: auto;
-    position: absolute!important
+    position: absolute!important;
+    width: 100%
 }
 
 .detailFeatureDesc {
