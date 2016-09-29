@@ -2115,6 +2115,13 @@ select[multiple].input-lg {
     color: #737373
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #headerDesktop .logoImg {
+        max-width: 250px;
+        max-height: 70px
+    }
+}
+
 @media (min-width:768px) {
     .form-inline .form-group {
         display: inline-block;
@@ -4496,7 +4503,7 @@ input[type="checkbox"] {
 	margin: 0;
 	overflow: hidden
   height: 200px;
-  /*border-bottom: solid 1px #502306;*/
+  /*border-bottom: solid 2px #502306;*/
 }
 
 #header .title {
@@ -4646,8 +4653,8 @@ input[type="checkbox"] {
 }
 
 #headerDesktop .logoImg {
-    max-width: 250px;
-    max-height: 50px
+    /*max-width: 250px;
+    max-height: 50px*/
 }
 
 #headerDesktop .switchBuilder {
@@ -5815,7 +5822,8 @@ ul.tilelist .longNumBlurb {
 }
 
 .detailFeatureTitle {
-    color: #8d1f1f;
+    color: #741b1b;
+    /*color: #502306;*/
     font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
     font-size: 30px;
     font-weight: bold;
@@ -5840,7 +5848,7 @@ ul.tilelist .longNumBlurb {
 }
 
 .detailPictureDiv img {
-    width: auto;
+    width: 97%;
     height: auto;
     margin: auto;
     cursor: pointer
