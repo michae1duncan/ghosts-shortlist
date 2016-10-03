@@ -10337,15 +10337,14 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
             }
 
             function M() {
-                if (v.selected.symbol.width == app.cfg.lutIconSpecs.large.getWidth()) return;
+                //if (v.selected.symbol.width == app.cfg.lutIconSpecs.large.getWidth()) return
                 v.selected.symbol.setWidth(app.cfg.lutIconSpecs.large.getWidth()), v.selected.symbol.setHeight(app.cfg.lutIconSpecs.large.getHeight()), v.selected.symbol.setOffset(app.cfg.lutIconSpecs.large.getOffsetX(), app.cfg.lutIconSpecs.large.getOffsetY()), v.selected.draw(), setTimeout(function() {
                     try {
                         v.selected.getShape().moveToFront()
-
                         //CUSTOM CODE
                         // this centers and zooms when each point is selecter or the left pane is swiped
-                        app.map.centerAndZoom(v.selected.geometry, 19)
-
+                        app.map.centerAndZoom(v.selected.geometry, 19);
+                        
                     } catch (e) {
                         console.log("problem with 'moveToFront()'...")
                     }
@@ -10597,15 +10596,15 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
                 else {
 
                 // ORIGINAL CODE
-                //     if (!v.selected.attributes.locationSet && !app.isInBuilder) return;
-                //     !app.map.extent.contains(v.selected.geometry) && v.selected.attributes.locationSet && app.map.centerAt(v.selected.geometry), setTimeout(function() {
-                //         v.buildMapTips()
-                //     }, 250), app.isInBuilder ? app.detailPanelBuilder.showSlide(v.selected.attributes.shortlist_id) : app.ui.detailPanel.showDetails(v.selected), app.ui.mobileIntro.hide(), app.ui.mobileFeatureList.setColor()
+                    if (!v.selected.attributes.locationSet && !app.isInBuilder) return;
+                    !app.map.extent.contains(v.selected.geometry) && v.selected.attributes.locationSet && app.map.centerAt(v.selected.geometry), setTimeout(function() {
+                        v.buildMapTips()
+                    }, 250), app.isInBuilder ? app.detailPanelBuilder.showSlide(v.selected.attributes.shortlist_id) : app.ui.detailPanel.showDetails(v.selected), app.ui.mobileIntro.hide(), app.ui.mobileFeatureList.setColor()
 
                 //CUSTOM  CENTER AT CODE
-                  app.map.centerAndZoom(v.selected.geometry, 19), setTimeout(function() {
-                      v.buildMapTips()
-                  }, 250), app.isInBuilder ? app.detailPanelBuilder.showSlide(v.selected.attributes.shortlist_id) : app.ui.detailPanel.showDetails(v.selected), app.ui.mobileIntro.hide(), app.ui.mobileFeatureList.setColor()
+                  // app.map.centerAndZoom(v.selected.geometry, 19), setTimeout(function() {
+                  //     v.buildMapTips()
+                  // }, 250), app.isInBuilder ? app.detailPanelBuilder.showSlide(v.selected.attributes.shortlist_id) : app.ui.detailPanel.showDetails(v.selected), app.ui.mobileIntro.hide(), app.ui.mobileFeatureList.setColor()
 
                 }
             }, this.buildMapTips = function(e) {
