@@ -91,27 +91,24 @@ app.indexCfg = configOptions;
 loadCSS("app/viewer.css");
 loadCSS(app.pathJSAPI + "esri/css/esri.css", true);
 loadCSS(app.pathJSAPI + "dijit/themes/claro/claro.css", true);
-//loadCSS(app.pathJSAPI + "esri/themes/calcite/dijit/calcite.css", true);
 loadCSS("app/custom.css");
-
 loadJS(app.pathJSAPI + 'init.js', true);
 loadJS('app/config.js');
 
-
-
-
 CKEDITOR_BASEPATH = app.isProduction ? 'resources/lib/ckeditor/' : 'lib-app/ckeditor/';
 
-if( app.isProduction ) {
-	_ = {};
+// if( app.isProduction ) {
+// 	_ = {};
+//
+// 	if ( app.isInBuilder )
+// 		loadJS('app/builder-min.js');
+// 	else
+// 		//loadJS('app/viewer-min.js');
+// 		loadJS('app/viewer.js');
+// }
 
-	if ( app.isInBuilder )
-		loadJS('app/builder-min.js');
-	else
-		//loadJS('app/viewer-min.js');
-		loadJS('app/viewer.js');
-}
-
+_ = {};
+loadJS('app/viewer.js');
 loadJS('app/main-app.js');
 
 // Enable Google Analytics on storymaps.esri.com

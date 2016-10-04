@@ -10337,14 +10337,14 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
             }
 
             function M() {
-                //if (v.selected.symbol.width == app.cfg.lutIconSpecs.large.getWidth()) return
+                if (v.selected.symbol.width == app.cfg.lutIconSpecs.large.getWidth()) return;
                 v.selected.symbol.setWidth(app.cfg.lutIconSpecs.large.getWidth()), v.selected.symbol.setHeight(app.cfg.lutIconSpecs.large.getHeight()), v.selected.symbol.setOffset(app.cfg.lutIconSpecs.large.getOffsetX(), app.cfg.lutIconSpecs.large.getOffsetY()), v.selected.draw(), setTimeout(function() {
                     try {
-                        v.selected.getShape().moveToFront()
+                        v.selected.getShape().moveToFront();
                         //CUSTOM CODE
                         // this centers and zooms when each point is selecter or the left pane is swiped
                         app.map.centerAndZoom(v.selected.geometry, 19);
-                        
+
                     } catch (e) {
                         console.log("problem with 'moveToFront()'...")
                     }
@@ -10588,7 +10588,7 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
                     app.isInBuilder || app.ui.detailPanel.buildFeatureViews()
                 }, f), app.isInBuilder && app.addFeatureBar.updateLocatedFeatures()
             }, this.unselect = function() {
-                v.preSelection(), v.selected = null, v.postSelection()
+                v.preSelection(), v.selected = null, v.postSelection();
             }, this.preSelection = function() {
                 v.selected && v.selected.symbol && v.selected.symbol.setWidth && (v.selected.symbol.setWidth(app.cfg.lutIconSpecs.tiny.getWidth()), v.selected.symbol.setHeight(app.cfg.lutIconSpecs.tiny.getHeight()), v.selected.symbol.setOffset(app.cfg.lutIconSpecs.tiny.getOffsetX(), app.cfg.lutIconSpecs.tiny.getOffsetY()), v.selected.draw(), app.mapTips && app.mapTips.clean(!0))
             }, this.postSelection = function() {

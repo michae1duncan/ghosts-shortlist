@@ -85,7 +85,7 @@ app.cfg = {
 		medium: new iconSpecs(31,35,5,13),
 		large: new iconSpecs(40,44,7,18)
 	},*/
-	
+
 //CUSTOM ICON SIZES
 	lutIconSpecs: {
 		tiny: new iconSpecs(31,34,6,13),
