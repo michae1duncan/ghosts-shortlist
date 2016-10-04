@@ -10696,7 +10696,7 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
                     var o = document.createElement("canvas");
                     o.width = y.width, o.height = y.height;
                     var u = o.getContext("2d");
-                    u.font = "bold " + o.width / 3.8 + "pt Calibri", u.drawImage(S, 0, 0);
+                    u.font = "bold " + o.width / 2.9 + "pt Calibri", u.drawImage(S, 0, 0);
                     var a = t;
                     if (!i) {
                         var f = u.getImageData(0, 0, S.width, S.height),
