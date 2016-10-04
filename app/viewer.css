@@ -5564,7 +5564,7 @@ ul.tilelist li {
     float: left;
     font-size: 12px;
     font-weight: bold;
-    background: rgba(249, 249, 249, 0.85);
+    background: rgba(249, 249, 249, 0.8);
     cursor: pointer;
     position: relative;
     border: solid 1px rgba(80,35,6, 0.95);
@@ -5636,6 +5636,9 @@ ul.tilelist .longNum {
 }
 
 ul.tilelist .blurb {
+    position: absolute;
+    top: -2px;
+    left: 32px;
     width: 155px;
     height: 38px;
     overflow: hidden;
@@ -5643,9 +5646,9 @@ ul.tilelist .blurb {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
-    word-wrap: break-word;
+    word-wrap: normal;
     float: left;
-    margin-left: 4px;
+    margin-left: 6px;
     text-align: left;
     font-family: 'open_sansregular', sans-serif
 }
@@ -7659,11 +7662,11 @@ body.mobile-view #builderQuotes {
 
 .multiTip {
     min-width: 60px;
-    max-width: 200px;
+    max-width: 160px;
     border: 2px #444 solid;
     overflow: hidden;
     word-wrap: break-word;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     border-radius: 5px
 }

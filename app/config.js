@@ -194,7 +194,6 @@ app.cfg = {
 
 function iconSpecs (width,height,offset_x,offset_y)
 {
-
 	var _width = width;
 	var _height = height;
 	var _offset_x = offset_x;
@@ -215,5 +214,4 @@ function iconSpecs (width,height,offset_x,offset_y)
 	this.getOffsetY = function() {
 		return _offset_y;
 	};
-
 };
