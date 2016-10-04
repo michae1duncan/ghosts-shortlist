@@ -7644,7 +7644,11 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
                 c.viewed = !0
             }, this.refreshSlides = function() {
                 g = !0;
-                if (!app.data.getWebAppData().getGeneralOptions().filterByExtent && !app.isInBuilder) return;
+                _slidesRefreshing = true;
+                if (!app.data.getWebAppData().getGeneralOptions().filterByExtent && !app.isInBuilder) {
+                  _slidesRefreshing = false;
+                  return;
+                }
                 var e = $(".entry.active").index();
                 e < 0 && (e = 0), $(".detailContainer").css("z-index", "0");
                 var t = $(".detailContainer")[e];
