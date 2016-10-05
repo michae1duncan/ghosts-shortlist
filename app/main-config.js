@@ -91,7 +91,6 @@ app.indexCfg = configOptions;
 loadCSS("app/viewer.css");
 loadCSS(app.pathJSAPI + "esri/css/esri.css", true);
 loadCSS(app.pathJSAPI + "dijit/themes/claro/claro.css", true);
-loadCSS("app/custom.css");
 loadJS(app.pathJSAPI + 'init.js', true);
 loadJS('app/config.js');
 
