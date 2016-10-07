@@ -5564,7 +5564,7 @@ ul.tilelist li {
     float: left;
     font-size: 12px;
     font-weight: bold;
-    background: rgba(249, 249, 249, 0.8);
+    background: rgba(249, 249, 249, 0.85);
     cursor: pointer;
     position: relative;
     border: solid 1px rgba(80,35,6, 0.95);
@@ -5826,9 +5826,8 @@ ul.tilelist .longNumBlurb {
 
 .detailFeatureTitle {
     color: #741b1b;
-    /*color: #502306;*/
     font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
     text-align: left;
     padding-left: 60px;
@@ -5836,6 +5835,50 @@ ul.tilelist .longNumBlurb {
     margin-top: -45px;
     margin-right: 125px;
     line-height: 26px
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1450px) {
+    .detailFeatureTitle {
+        font-size: 22px;
+        padding-left: 56px;
+        padding-top: 10px;
+        margin-right: 116px
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .detailFeatureTitle {
+        font-size: 16px;
+        padding-left: 10px;
+        padding-top: 55px;
+        margin-top: -45px;
+        margin-right: 10px;
+        line-height: 18px
+    }
+    .detailFeatureNum {
+        width: 28px;
+        height: 30px;
+        margin-left: 8px;
+        margin-top: 8px;
+        padding: 0px 0;
+    }
+}
+
+@media only screen and  (max-width: 767px) {
+    .detailFeatureTitle {
+        font-size: 14px;
+        padding-top: 16px;
+        padding-left: 44px;
+        margin-right: 118px;
+        line-height: 16px
+    }
+    .detailFeatureNum {
+        width: 28px;
+        height: 30px;
+        margin-left: 8px;
+        margin-top: 8px;
+        padding: 0px 0;
+    }
 }
 
 .notNumbered {
@@ -6122,7 +6165,7 @@ ul.tilelist .longNumBlurb {
 #mobileIntro {
     height: 100%;
     width: 100%;
-    background-color: #444;
+    background-color: #741b1b;
     display: none;
     z-index: 101;
     position: absolute;
@@ -6131,18 +6174,18 @@ ul.tilelist .longNumBlurb {
 }
 
 .mobileTitle {
-    margin-top: 12px;
-    margin-left: 15px;
-    font-family: 'open_sanssemibold', sans-serif;
-    font-size: 22px;
+    margin-top: 14px;
+    margin-left: 14px;
+    font-family: "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-size: 26px;
     font-weight: 700;
     color: #fff
 }
 
 .mobileSnippet {
-    margin: 15px;
-    font-family: 'open_sansregular', sans-serif;
-    font-size: 14px;
+    margin: 14px;
+    font-family: "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-size: 18px;
     color: #fff;
     max-height: 350px;
     overflow-y: auto
